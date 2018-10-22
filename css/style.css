@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:300,400,500");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat";
+  background: #2b2b2b;
+}
+
+.home-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-container .home3 {
+  height: 100%;
+  width: 100%;
+  background: #f9ece3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.home-container .home3 .right {
+  overflow: hidden;
+}
+
+.home-container .home3 .right .img-wrapper {
+  background: url("../img/4.jpg") center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.home-container .home3 .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-container .home3 .left h2 {
+  font-family: "Cinzel";
+  font-size: 50px;
+  width: 350px;
+  color: #2b2b2b;
+}
+
+.home-container .home3 .left p {
+  width: 350px;
+  line-height: 25px;
+  letter-spacing: 3px;
+}
+
+.home-container .home3 .left .knowMore {
+  text-align: right;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-container .home3 .left .knowMore:hover .plus {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+}
+
+.home-container .home2 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-container .home2 .content-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../img/2.jpg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px;
+  text-transform: uppercase;
+}
+
+.home-container .home2 .content-wrapper .content-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-container .home2 .content-wrapper .content-up .line {
+  height: 2px;
+  width: 60px;
+  background: #2b2b2b;
+  margin: 5px;
+}
+
+.home-container .home2 .content-wrapper .content-up .content-side {
+  color: #2b2b2b;
+  font-size: 45px;
+}
+
+.home-container .home2 .content-wrapper .content-down {
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-container .home2 .content-wrapper .content-down span {
+  color: #2b2b2b;
+}
+
+.home-container .home2 .content-wrapper .content-down span:nth-child(1) {
+  color: #fff;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+          clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+  -webkit-animation: clip 1s forwards;
+          animation: clip 1s forwards;
+  z-index: 2;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.home-container .home2 .content-wrapper .content-down .line {
+  height: 2px;
+  width: 30vw;
+  background: #fff;
+  margin-left: 10px;
+}
+
+.home-container .home2 .content-wrapper .content-down .question-wrapper {
+  margin-left: 30px;
+  background: #f9ece3;
+  border-radius: 50%;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #2b2b2b;
+}
+
+.home-container .home2 .content-wrapper .content-down .question-wrapper:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 1px solid #f9ece3;
+  border-radius: 50%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation: float 2s ease-in infinite;
+          animation: float 2s ease-in infinite;
+}
+
+.home-container .home1 {
+  height: 100%;
+  width: 100%;
+  background: url("../img/1.jpg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.home-container .home1 img {
+  height: 200px;
+  margin: auto;
+  opacity: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home-container .home1 .emo {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home-container .home1 .emo h1 {
+  text-align: center;
+  color: #2b2b2b;
+  font-size: 150px;
+  letter-spacing: 10px;
+}
+
+.home-container .homeWrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  overflow: hidden;
+}
+
+.home-container .four {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.home-container .four .home4 {
+  height: 100%;
+  width: 100%;
+  background: url("../img/pawan-bg.png") center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.home-container .four img {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  height: 150px;
+}
+
+.home-container .four .content {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Cinzel";
+  letter-spacing: 5px;
+  margin-top: 30px;
+}
+
+@-webkit-keyframes clip {
+  0% {
+    -webkit-clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes clip {
+  0% {
+    -webkit-clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+            clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

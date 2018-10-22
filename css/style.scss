@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:300,400,500");
+
+$black: #2b2b2b;
+$gunMetal: #22333b;
+$peachOrange: #f9ece3;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  background: $black;
+}
+.home-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  .home3 {
+    height: 100%;
+    width: 100%;
+    background: $peachOrange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .right {
+      overflow: hidden;
+      .img-wrapper {
+        background: url("../img/4.jpg") center center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-family: "Cinzel";
+        font-size: 50px;
+        width: 350px;
+        color: $black;
+      }
+      p {
+        width: 350px;
+        line-height: 25px;
+        letter-spacing: 3px;
+      }
+      .knowMore {
+        text-align: right;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        &:hover .plus {
+          transform-origin: center center;
+          transition: all 0.5s;
+          transform: rotate(720deg);
+        }
+      }
+    }
+  }
+  .home2 {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    .content-wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      background: url("../img/2.jpg") center center;
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 40px;
+      text-transform: uppercase;
+      .content-up {
+        display: flex;
+        align-items: center;
+        .line {
+          height: 2px;
+          width: 60px;
+          background: $black;
+          margin: 5px;
+        }
+        .content-side {
+          color: $black;
+          font-size: 45px;
+        }
+      }
+      .content-down {
+        font-size: 100px;
+        display: flex;
+        align-items: center;
+        span {
+          color: $black;
+          &:nth-child(1) {
+            color: #fff;
+            position: absolute;
+            clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+            animation: clip 1s forwards;
+            z-index: 2;
+            animation-delay: 1s;
+            animation-play-state: paused;
+          }
+        }
+
+        .line {
+          height: 2px;
+          width: 30vw;
+          background: #fff;
+          margin-left: 10px;
+        }
+        .question-wrapper {
+          margin-left: 30px;
+          background: $peachOrange;
+          border-radius: 50%;
+          padding: 20px;
+          height: 100px;
+          width: 100px;
+          text-align: center;
+          font-size: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          color: $black;
+        }
+        .question-wrapper:after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          transform: scale(1.2);
+          border: 1px solid $peachOrange;
+          border-radius: 50%;
+          transform-origin: center center;
+          animation: float 2s ease-in infinite;
+        }
+      }
+    }
+  }
+  .home1 {
+    height: 100%;
+    width: 100%;
+    background: url("../img/1.jpg") center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    perspective: 500px;
+    img {
+      height: 200px;
+      margin: auto;
+      opacity: 0;
+      align-self: center;
+    }
+    .emo {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      align-self: center;
+      h1 {
+        text-align: center;
+        color: $black;
+        font-size: 150px;
+        letter-spacing: 10px;
+      }
+    }
+  }
+  .homeWrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    overflow: hidden;
+  }
+  .four {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    // right: -100%;
+    overflow: hidden;
+    .home4 {
+      height: 100%;
+      width: 100%;
+      background: url("../img/pawan-bg.png") center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+    img {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      height: 150px;
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      display: flex;
+      font-family: "Cinzel";
+      letter-spacing: 5px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@keyframes clip {
+  0% {
+    clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

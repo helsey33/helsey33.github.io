@@ -3,7 +3,7 @@ let pdt2 = true;
 let pdt3 = true;
 let pdt4 = true;
 
-document.querySelector(".pd1").onclick = () => {
+document.querySelector(".main1").onclick = () => {
   if (pdt1) {
     anime
       .timeline({
@@ -11,7 +11,7 @@ document.querySelector(".pd1").onclick = () => {
       })
       .add({
         targets: ".main2,.main3,.main4",
-        scale: [1, 0.5],
+        scale: [1, 0],
         opacity: [1, 0],
         translateX: [0, 300],
         delay: (el, i) => i * 50,
@@ -43,7 +43,7 @@ document.querySelector(".pd1").onclick = () => {
   }
 };
 
-document.querySelector(".pd2").onclick = () => {
+document.querySelector(".main2").onclick = () => {
   if (pdt2) {
     anime
       .timeline({
@@ -51,7 +51,7 @@ document.querySelector(".pd2").onclick = () => {
       })
       .add({
         targets: ".main1,.main3,.main4",
-        scale: [1, 0.5],
+        scale: [1, 0],
         opacity: [1, 0],
         translateX: [0, 300],
         delay: (el, i) => i * 50,
@@ -87,7 +87,7 @@ document.querySelector(".pd2").onclick = () => {
   }
 };
 
-document.querySelector(".pd3").onclick = () => {
+document.querySelector(".main3").onclick = () => {
   if (pdt3) {
     anime
       .timeline({
@@ -95,7 +95,7 @@ document.querySelector(".pd3").onclick = () => {
       })
       .add({
         targets: ".main1,.main2,.main4",
-        scale: [1, 0.5],
+        scale: [1, 0],
         opacity: [1, 0],
         translateX: [0, 300],
         delay: (el, i) => i * 50,
@@ -131,7 +131,7 @@ document.querySelector(".pd3").onclick = () => {
   }
 };
 
-document.querySelector(".pd4").onclick = () => {
+document.querySelector(".main4").onclick = () => {
   if (pdt4) {
     anime
       .timeline({
@@ -139,7 +139,7 @@ document.querySelector(".pd4").onclick = () => {
       })
       .add({
         targets: ".main1,.main2,.main3",
-        scale: [1, 0.5],
+        scale: [1, 0],
         opacity: [1, 0],
         translateX: [0, 300],
         delay: (el, i) => i * 50,
@@ -204,7 +204,7 @@ document.querySelector(".back_img").onclick = () => {
       })
       .add({
         targets: ".main2,.main3,.main4",
-        scale: [0.5, 1],
+        scale: [0, 1],
         opacity: [0, 1],
         translateX: [300, 0],
         delay: (el, i) => i * 50,
@@ -246,7 +246,7 @@ document.querySelector(".back_img").onclick = () => {
       })
       .add({
         targets: ".main1,.main3,.main4",
-        scale: [0.5, 1],
+        scale: [0, 1],
         opacity: [0, 1],
         translateX: [300, 0],
         delay: (el, i) => i * 50,
@@ -288,7 +288,7 @@ document.querySelector(".back_img").onclick = () => {
       })
       .add({
         targets: ".main1,.main2,.main4",
-        scale: [0.5, 1],
+        scale: [0, 1],
         opacity: [0, 1],
         translateX: [300, 0],
         delay: (el, i) => i * 50,
@@ -330,7 +330,7 @@ document.querySelector(".back_img").onclick = () => {
       })
       .add({
         targets: ".main1,.main2,.main3",
-        scale: [0.5, 1],
+        scale: [0, 1],
         opacity: [0, 1],
         translateX: [300, 0],
         delay: (el, i) => i * 50,

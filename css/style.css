@@ -266,21 +266,8 @@ body {
           align-items: center;
   cursor: pointer;
   color: #2b2b2b;
-}
-
-.home-container .home2 .content-wrapper .content-down .question-wrapper:after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  border: 1px solid #f9ece3;
-  border-radius: 50%;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-animation: float 2s ease-in infinite;
-          animation: float 2s ease-in infinite;
+  -webkit-animation: float 2s ease-out infinite;
+          animation: float 2s ease-out infinite;
 }
 
 .home-container .home1 {
@@ -353,6 +340,10 @@ body {
           align-items: center;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+}
+
+.home-container .four .home4 svg {
+  position: absolute;
 }
 
 .home-container .four img {

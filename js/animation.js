@@ -33,12 +33,6 @@ window.addEventListener("load", () => {
       duration: 2500
     })
     .add({
-      targets: ".content-wrapper",
-      scale: [1.2, 1],
-      offset: "-=2500",
-      duration: 2000
-    })
-    .add({
       targets: ".content-up, .content-down span",
       opacity: [0, 1],
       translateY: [100, 0],
@@ -57,7 +51,7 @@ window.addEventListener("load", () => {
     })
     .add({
       targets: ".content-down .question-wrapper",
-      scale: [0, 1],
+      opacity: [0, 1],
       offset: "-=500"
     });
 

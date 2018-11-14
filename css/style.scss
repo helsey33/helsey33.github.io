@@ -190,18 +190,19 @@ body {
           align-items: center;
           cursor: pointer;
           color: $black;
+          animation: float 2s ease-out infinite;
         }
-        .question-wrapper:after {
-          content: "";
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          transform: scale(1.2);
-          border: 1px solid $peachOrange;
-          border-radius: 50%;
-          transform-origin: center center;
-          animation: float 2s ease-in infinite;
-        }
+        // .question-wrapper::before {
+        //   content: "";
+        //   position: absolute;
+        //   height: 100%;
+        //   width: 100%;
+        //   border: 1px solid $peachOrange;
+        //   border-radius: 50%;
+        //   transform-origin: center center;
+        //   // animation: float 2s ease-out infinite;
+        //   transform: scale(1.2);
+        // }
       }
     }
   }
@@ -254,6 +255,9 @@ body {
       justify-content: center;
       align-items: center;
       perspective: 1000px;
+      svg {
+        position: absolute;
+      }
     }
     img {
       position: absolute;

@@ -886,6 +886,7 @@ body {
 #product {
   margin-top: 200px;
   height: 100vh;
+  overflow: hidden;
 }
 
 #product .heading {

@@ -3,7 +3,7 @@
 
 $black: #2b2b2b;
 $gunMetal: #22333b;
-$peachOrange: #f9ece3;
+$peachOrange: #fff;
 
 body {
   margin: 0;
@@ -13,6 +13,11 @@ body {
   overflow-x: hidden;
   // background: $black;
   // overflow: hidden;
+}
+
+@font-face {
+  font-family: "Lombok";
+  src: url(Lombok.otf);
 }
 
 #hamburger {
@@ -81,13 +86,13 @@ body {
   .home3 {
     height: 100%;
     width: 100%;
-    background: $peachOrange;
+    background: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     .right {
       overflow: hidden;
       .img-wrapper {
-        background: url("../img/4.jpg") center center;
+        background: url("../img/3.png") center center;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -192,17 +197,6 @@ body {
           color: $black;
           animation: float 2s ease-out infinite;
         }
-        // .question-wrapper::before {
-        //   content: "";
-        //   position: absolute;
-        //   height: 100%;
-        //   width: 100%;
-        //   border: 1px solid $peachOrange;
-        //   border-radius: 50%;
-        //   transform-origin: center center;
-        //   // animation: float 2s ease-out infinite;
-        //   transform: scale(1.2);
-        // }
       }
     }
   }
@@ -214,11 +208,16 @@ body {
     background-attachment: fixed;
     display: flex;
     perspective: 500px;
-    img {
-      height: 200px;
+    .text {
       margin: auto;
       opacity: 0;
       align-self: center;
+      font-size: 70px;
+      color: $black;
+      text-align: center;
+      width: 30%;
+      text-transform: uppercase;
+      font-weight: 300;
     }
     .emo {
       position: absolute;
@@ -227,9 +226,10 @@ body {
       align-self: center;
       h1 {
         text-align: center;
-        color: $black;
         font-size: 150px;
+        font-family: "Lombok";
         letter-spacing: 10px;
+        color: $black;
       }
     }
   }
@@ -259,11 +259,14 @@ body {
         position: absolute;
       }
     }
-    img {
+    .logo {
       position: absolute;
-      top: 30px;
-      left: 10px;
-      height: 150px;
+      top: 10px;
+      left: 30px;
+      color: $black;
+      font-family: "Lombok";
+      font-size: 30px;
+      display: flex;
     }
     .content {
       position: absolute;

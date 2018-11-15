@@ -9,17 +9,17 @@ window.addEventListener("load", () => {
       duration: 2500
     })
     .add({
-      targets: ".home1 img",
+      targets: ".home1 .text",
       opacity: [0, 1],
       translateY: [40, 0],
       offset: "-=1000"
     })
     .add({
-      targets: ".home1 img",
+      targets: ".home1 .text",
       opacity: [1, 0],
       translateY: [0, -40],
       complete: anim => {
-        document.querySelector(".home1 img").remove();
+        document.querySelector(".home1 .text").remove();
       }
     })
     .add({
@@ -135,9 +135,10 @@ window.addEventListener("load", () => {
         }
       })
       .add({
-        targets: ".home4 .logo",
-        translateX: [-200, 0],
-        rotateZ: [-120, 0]
+        targets: ".home4 .logo div",
+        opacity: [0, 1],
+        translateX: [-10, 0],
+        delay: (el, i) => i * 100
       })
       .add({
         targets: ".home4 .content div",
@@ -157,8 +158,8 @@ window.addEventListener("load", () => {
     let yPos = e.clientY / window.innerHeight - 0.5;
     anime({
       targets: ".home4 svg",
-      rotateX: [15 * yPos],
-      rotateY: [15 * xPos],
+      rotateX: [10 * yPos],
+      rotateY: [10 * xPos],
       duration: 50
     });
   };

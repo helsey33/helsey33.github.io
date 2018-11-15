@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Lombok";
+  src: url(Lombok.otf);
+}
+
 #hamburger, .active {
   position: absolute;
   z-index: 9999;
@@ -95,11 +100,11 @@ body {
 .home-container .home3 {
   height: 100%;
   width: 100%;
-  background: #f9ece3;
+  background: #fff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
 }
 
 .home-container .home3 .right {
@@ -107,7 +112,7 @@ body {
 }
 
 .home-container .home3 .right .img-wrapper {
-  background: url("../img/4.jpg") center center;
+  background: url("../img/3.png") center center;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -248,7 +253,7 @@ body {
 
 .home-container .home2 .content-wrapper .content-down .question-wrapper {
   margin-left: 30px;
-  background: #f9ece3;
+  background: #fff;
   border-radius: 50%;
   padding: 20px;
   height: 100px;
@@ -283,13 +288,18 @@ body {
           perspective: 500px;
 }
 
-.home-container .home1 img {
-  height: 200px;
+.home-container .home1 .text {
   margin: auto;
   opacity: 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-size: 70px;
+  color: #2b2b2b;
+  text-align: center;
+  width: 30%;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .home-container .home1 .emo {
@@ -303,9 +313,10 @@ body {
 
 .home-container .home1 .emo h1 {
   text-align: center;
-  color: #2b2b2b;
   font-size: 150px;
+  font-family: "Lombok";
   letter-spacing: 10px;
+  color: #2b2b2b;
 }
 
 .home-container .homeWrapper {
@@ -346,11 +357,16 @@ body {
   position: absolute;
 }
 
-.home-container .four img {
+.home-container .four .logo {
   position: absolute;
-  top: 30px;
-  left: 10px;
-  height: 150px;
+  top: 10px;
+  left: 30px;
+  color: #2b2b2b;
+  font-family: "Lombok";
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .home-container .four .content {

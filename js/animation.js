@@ -64,13 +64,11 @@ window.addEventListener("load", () => {
       .add({
         targets: ".three",
         top: ["-100%", 0],
-        duration: 2000,
-        run: anime =>
-          (document.querySelector(".content-down span").style.zIndex = "0")
+        duration: 2000
       })
       .add({
         targets: ".three .img-wrapper",
-        scale: [1.5, 1],
+        scale: [1.4, 1],
         offset: "-=2000",
         duration: 2000
       })
@@ -80,6 +78,9 @@ window.addEventListener("load", () => {
         translateX: [-100, 0],
         delay: (el, i) => 200 * i,
         offset: "-=1000",
+        begin: () => {
+          document.querySelector(".content-down span").style.zIndex = "0";
+        },
         complete: anime => {
           document.querySelector(".two").style.top = "-100%";
           document.querySelector(".one").style.top = "-100%";

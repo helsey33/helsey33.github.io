@@ -117,3 +117,21 @@ var waypoint4 = new Waypoint({
   handler: animateMedia,
   offset: "50%"
 });
+
+const animatePort = () => {
+  anime({
+    targets: ".slide--layout-1 .slide__figure",
+    translateY: [30, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1000,
+    delay: (el, i) => i * 100
+  });
+  waypoint6.disable();
+};
+
+var waypoint6 = new Waypoint({
+  element: document.querySelector("#portfolio"),
+  handler: animatePort,
+  offset: "50%"
+});

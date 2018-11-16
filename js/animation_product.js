@@ -346,7 +346,7 @@ const animateProduct = () => {
     targets: ".main_wrapper",
     opacity: [0, 1],
     translateY: [50, 0],
-    delay: (el, i) => i * 200,
+    delay: (el, i) => i * 100,
     duration: 1000,
     easing: "easeOutExpo"
   });

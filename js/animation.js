@@ -70,7 +70,12 @@ window.addEventListener("load", () => {
         targets: ".three .img-wrapper",
         scale: [1.4, 1],
         offset: "-=2000",
-        duration: 2000
+        duration: 2000,
+        update: anim => {
+          if (Math.round(anim.progress) === 13) {
+            document.querySelector(".content-down span").style.zIndex = "0";
+          }
+        }
       })
       .add({
         targets: ".three .left div",
@@ -78,9 +83,6 @@ window.addEventListener("load", () => {
         translateX: [-100, 0],
         delay: (el, i) => 200 * i,
         offset: "-=1000",
-        begin: () => {
-          document.querySelector(".content-down span").style.zIndex = "0";
-        },
         complete: anime => {
           document.querySelector(".two").style.top = "-100%";
           document.querySelector(".one").style.top = "-100%";

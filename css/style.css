@@ -956,6 +956,7 @@ body {
   -webkit-animation: clip 1s forwards;
           animation: clip 1s forwards;
   z-index: 2;
+  text-shadow: 0px 0px 2px #d9d9d9;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-animation-play-state: paused;
@@ -1767,5 +1768,96 @@ body {
 
 .pd4_side:nth-child(3) {
   background: url("../img/product/pdt4/side3.jpg") center center no-repeat;
+}
+
+#footer {
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "top top" "left right";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+#footer .fEle {
+  opacity: 0;
+}
+
+#footer .top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+#footer .top .heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+
+#footer .top .para {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #454545;
+}
+
+#footer .left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 3px;
+}
+
+#footer .left span {
+  color: #454545;
+}
+
+#footer .right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1px solid #eee;
+}
+
+#footer .right div {
+  width: 40%;
+  color: #454545;
+  letter-spacing: 3px;
 }
 /*# sourceMappingURL=style.css.map */

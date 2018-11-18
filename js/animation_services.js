@@ -135,3 +135,21 @@ var waypoint6 = new Waypoint({
   handler: animatePort,
   offset: "50%"
 });
+
+const animateFooter = () => {
+  anime({
+    targets: ".fEle",
+    easing: "easeOutExpo",
+    opacity: [0, 1],
+    translateY: [10, 0],
+    duration: 1000,
+    delay: (el, i) => i * 100
+  });
+  waypoint7.disable();
+};
+
+var waypoint7 = new Waypoint({
+  element: document.querySelector("#footer"),
+  handler: animateFooter,
+  offset: "50%"
+});

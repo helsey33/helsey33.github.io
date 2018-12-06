@@ -173,24 +173,28 @@ let active = false;
 document.getElementById("hamburger").onclick = () => {
   document.getElementById("hamburger").classList.toggle("active");
   if (!active) {
-    anime({
-      targets: "#menu",
-      easing: "easeOutExpo",
-      top: ["-100%", 0],
-      duration: 2500,
-      begin: () => {
-        document.querySelector(".home-container").style.opacity = 0;
-      }
-    });
+    anime
+      .timeline({
+        easing: "easeOutExpo"
+      })
+      .add({
+        targets: "#menu",
+        right: ["-21%", 0],
+        duration: 1000
+      })
+      .add({
+        targets: "#menu li",
+        translateX: [20, 0],
+        opacity: [0, 1],
+        delay: (el, i) => i * 100,
+        offset: "-=800"
+      });
   } else {
     anime({
       targets: "#menu",
       easing: "easeOutExpo",
-      top: [0, "-100%"],
-      duration: 2500,
-      begin: () => {
-        document.querySelector(".home-container").style.opacity = 1;
-      }
+      right: [0, "-21%"],
+      duration: 1000
     });
   }
 

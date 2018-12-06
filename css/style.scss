@@ -85,12 +85,13 @@ body {
 }
 
 #hamburger {
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   top: 40px;
   right: 40px;
   cursor: pointer;
   .nav {
+    position: static;
     height: 3px;
     margin: 5px;
     width: 30px;
@@ -116,28 +117,39 @@ body {
 }
 
 #menu {
-  background: #fff;
   height: 100vh;
-  width: 100%;
-  top: -100%;
-  position: absolute;
+  width: 20%;
+  right: 0;
+  right: -21%;
+  position: fixed;
   z-index: 9998;
-  .menu-wrapper {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    overflow: hidden;
-    .left {
-      background: #fff;
-      svg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  overflow: hidden;
+  background: #fff;
+  .head {
+    background: #fff;
+  }
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .menu {
+      height: 100%;
+      width: 100%;
+      li {
+        list-style: none;
+        text-transform: uppercase;
+        font-family: "Montserrat", serif;
+        margin: 30px 0;
+        letter-spacing: 3px;
+        font-size: 20px;
+        opacity: 0;
       }
-    }
-    .right {
-      background: rgb(7, 168, 231);
+      a {
+        text-decoration: none;
+        color: $black;
+      }
     }
   }
 }
@@ -846,3 +858,5 @@ body {
     }
   }
 }
+
+@import "media_query";

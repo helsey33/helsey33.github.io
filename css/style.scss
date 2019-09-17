@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:300,400,500");
-@import url("https://fonts.googleapis.com/css?family=Leckerli+One");
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 
 $black: #2b2b2b;
 $gunMetal: #22333b;
@@ -19,16 +20,24 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
-@import "base";
+@import 'base';
 .slide--layout-1 .slide__figure {
   opacity: 0;
+}
+
+html{
+  font-size:62.5%;
+}
+
+*{
+  transform: rotate(0.01);
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   overflow-x: hidden;
   scroll-behavior: smooth;
   // background: $black;
@@ -55,7 +64,7 @@ body {
     animation: loading 2s ease-out infinite;
     transition: all 1s;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       height: 100%;
       width: 100%;
@@ -79,27 +88,22 @@ body {
   }
 }
 
-@font-face {
-  font-family: "Lombok";
-  src: url(Lombok.otf);
-}
-
 #hamburger {
   position: fixed;
   z-index: 9999;
-  top: 40px;
-  right: 40px;
+  top: 4rem;
+  right: 4rem;
   cursor: pointer;
   .nav {
     position: static;
     height: 3px;
     margin: 5px;
-    width: 30px;
+    width: 3rem;
     border-radius: 5px;
     background: $black;
     transition: all 0.3s ease-out;
     &:nth-child(2) {
-      width: 25px;
+      width: 2.5rem;
     }
   }
 }
@@ -118,7 +122,7 @@ body {
 
 #menu {
   height: 100vh;
-  width: 20%;
+  width: 15%;
   right: 0;
   right: -21%;
   position: fixed;
@@ -140,10 +144,10 @@ body {
       li {
         list-style: none;
         text-transform: uppercase;
-        font-family: "Montserrat", serif;
-        margin: 30px 0;
+        font-family: 'Montserrat', serif;
+        margin: 5rem 0;
         letter-spacing: 3px;
-        font-size: 20px;
+        font-size: 2rem;
         opacity: 0;
       }
       a {
@@ -168,7 +172,7 @@ body {
     .right {
       overflow: hidden;
       .img-wrapper {
-        background: url("../img/3.png") center center;
+        background: url('../img/3.png') center center;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -178,20 +182,24 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      div{
+        will-change: opacity,transform;
+      }
       h2 {
-        font-family: "Cinzel";
-        font-size: 50px;
-        width: 350px;
+        font-family: 'Cinzel';
+        font-size: 5rem;
+        width: 35rem;
         color: $black;
       }
       p {
-        width: 350px;
-        line-height: 20px;
+        width: 35rem;
+        line-height: 3rem;
         letter-spacing: 3px;
+        font-size:2rem;
       }
       .knowMore {
         text-align: right;
-        font-size: 15px;
+        font-size: 1.5rem;
         cursor: pointer;
         margin: 0;
         display: flex;
@@ -208,6 +216,9 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: #6dc3a6;
     .content-wrapper {
       height: 100%;
       width: 100%;
@@ -215,29 +226,27 @@ body {
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
-      background: url("../img/2.png") center center;
-      background-size: cover;
-      background-attachment: fixed;
-      padding: 40px;
+      padding: 4rem;
       text-transform: uppercase;
       .content-up {
         display: flex;
         align-items: center;
         .line {
           height: 2px;
-          width: 60px;
+          width: 6rem;
           background: $black;
-          margin: 5px;
+          margin: .5rem;
         }
         .content-side {
           color: $black;
-          font-size: 45px;
+          font-size: 4.5rem;
         }
       }
       .content-down {
-        font-size: 100px;
+        font-size: 10rem;
         display: flex;
         align-items: center;
+        transition: opacity 0.5s;
         span {
           color: $black;
           &:nth-child(1) {
@@ -258,21 +267,36 @@ body {
           background: #fff;
           margin-left: 10px;
         }
-        .question-wrapper {
-          margin-left: 30px;
-          background: $black;
-          border-radius: 50%;
-          padding: 20px;
-          height: 100px;
-          width: 100px;
-          text-align: center;
-          font-size: 60px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          color: #fff;
-          animation: float 2s ease-out infinite;
+      }
+    }
+    .content-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .devices {
+        svg {
+          opacity: 0;
+          transition: opacity 0.5s;
+          width: 1000px;
+          #c_x5F_screen {
+            transform-origin: 50% 45%;
+            path {
+              transform-origin: center center;
+            }
+            #c_x5F_border,
+            #c_x5F_bg {
+              transform-origin: center center;
+            }
+          }
+          #c_x5F_power {
+            transform-origin: 50% 65%;
+          }
+          #c_x5F_stand_x5F_g {
+            transform-origin: 50% 70%;
+          }
+          #c_x5F_bez_x5F_g {
+            transform-origin: 50% 60%;
+          }
         }
       }
     }
@@ -280,16 +304,16 @@ body {
   .home1 {
     height: 100%;
     width: 100%;
-    background: url("../img/1.png") center center;
+    background: url('../img/1.png') center center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    perspective: 500px;
+    perspective: 50rem;
     .text {
       margin: auto;
       opacity: 0;
       align-self: center;
-      font-size: 70px;
+      font-size: 7rem;
       color: $black;
       text-align: center;
       width: 30%;
@@ -303,10 +327,18 @@ body {
       align-self: center;
       h1 {
         text-align: center;
-        font-size: 150px;
-        font-family: "Lombok";
-        letter-spacing: 10px;
+        font-size: 7rem;
+        letter-spacing: 1rem;
         color: $black;
+        text-transform: uppercase;
+        font-weight: 300;
+        width: 40%;
+        margin: 0 auto;
+        span {
+          font-size: 5rem;
+          font-weight: lighter;
+          letter-spacing: 3px;
+        }
       }
     }
   }
@@ -316,6 +348,7 @@ body {
     position: absolute;
     top: -100%;
     overflow: hidden;
+    will-change: top;
   }
   .four {
     height: 100%;
@@ -323,35 +356,29 @@ body {
     position: absolute;
     right: -100%;
     overflow: hidden;
+    will-change: right;
     .home4 {
       height: 100%;
       width: 100%;
-      background: url("../img/pawan-bg.png") center center;
+      background: url('../img/pawan-bg.png') center center;
       background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       perspective: 1000px;
+      will-change: transform;
       svg {
         position: absolute;
       }
-    }
-    .logo {
-      position: absolute;
-      top: 10px;
-      left: 30px;
-      color: $black;
-      font-family: "Lombok";
-      font-size: 30px;
-      display: flex;
     }
     .content {
       position: absolute;
       top: 0;
       display: flex;
-      font-family: "Cinzel";
+      font-family: 'Cinzel';
       letter-spacing: 5px;
-      margin-top: 30px;
+      margin-top: 3rem;
+      font-size:1.6rem;
     }
   }
 }
@@ -424,18 +451,18 @@ body {
       }
     }
     .inner {
-      margin-left: 50px;
+      margin-left: 5rem;
     }
     .heading {
-      font-size: 30px;
+      font-size: 3rem;
       text-align: left;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
       background: #fff;
       width: 30%;
       color: #d5803f;
       position: relative;
       span {
-        content: "";
+        content: '';
         width: 100%;
         height: 100%;
         position: absolute;
@@ -451,7 +478,7 @@ body {
       background: #fff;
       overflow: hidden;
       position: relative;
-      font-size: 15px;
+      font-size: 2rem;
       .content2 {
         position: absolute;
         top: 0;
@@ -498,7 +525,7 @@ body {
       .img1 {
         width: 100%;
         height: 100%;
-        background: url("../img/abstract-art-background-1037999.png") center
+        background: url('../img/abstract-art-background-1037999.png') center
           center;
         background-size: cover;
         transform-origin: center center;
@@ -506,7 +533,7 @@ body {
       .img2 {
         width: 100%;
         height: 100%;
-        background: url("../img/camera-cute-fashion-881633.png") center center;
+        background: url('../img/camera-cute-fashion-881633.png') center center;
         background-size: cover;
       }
       span {
@@ -530,7 +557,7 @@ body {
       align-items: center;
       font-weight: 300;
       letter-spacing: 5px;
-      font-size: 13px;
+      font-size: 1.6rem;
       div {
         transition: all 0.5s;
         cursor: pointer;
@@ -546,12 +573,12 @@ body {
 #services {
   .web_design {
     height: 100vh;
-    background: url("../img/services1.png") center center no-repeat;
+    background: url('../img/services1.png') center center no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: 50% 50%;
     .left {
-      font-family: "Leckerli One", cursive;
+      font-family: 'Leckerli One', cursive;
       font-size: 60px;
       color: #28282b;
       display: flex;
@@ -574,7 +601,7 @@ body {
           background: #fde038;
         }
         .new_think {
-          font-family: "Montserrat";
+          font-family: 'Montserrat';
           font-size: 15px;
           font-weight: 300;
           color: $black;
@@ -599,7 +626,7 @@ body {
           position: absolute;
           bottom: -100%;
           width: 100%;
-          background: url("../img/800_pegeo.png") center center no-repeat;
+          background: url('../img/800_pegeo.png') center center no-repeat;
           background-size: cover;
         }
       }
@@ -617,14 +644,15 @@ body {
   }
   .dNd {
     height: 100vh;
-    background: url("../img/services2.png") center center no-repeat;
+    background: url('../img/services2.png') center center no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: 50% 50%;
+    overflow-x: hidden;
     .left {
       position: relative;
       .text {
-        font-family: "Montserrat";
+        font-family: 'Montserrat';
         font-size: 25px;
         font-weight: 200;
         letter-spacing: 5px;
@@ -660,7 +688,7 @@ body {
   }
   .media {
     height: 100vh;
-    background: url("../img/services3.png") center center no-repeat;
+    background: url('../img/services3.png') center center no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -680,7 +708,7 @@ body {
           width: 100%;
           position: absolute;
           bottom: -100%;
-          background: url("../img/media.png") center center no-repeat;
+          background: url('../img/media.png') center center no-repeat;
           background-size: cover;
         }
       }
@@ -703,7 +731,7 @@ body {
         position: relative;
       }
       .heading {
-        font-family: "Leckerli One", cursive;
+        font-family: 'Leckerli One', cursive;
         margin: 10px 0;
         font-size: 40px;
         opacity: 0;
@@ -726,89 +754,56 @@ body {
   }
 }
 
-#product {
-  margin-top: 200px;
-  height: 100vh;
+#projects {
+  margin-top: 100px;
+  height: 80vh;
   overflow: hidden;
+  position: relative;
   .heading {
     width: 100%;
-    margin-left: 280px;
-    font-family: "Leckerli One", cursive;
-    font-size: 60px;
+    margin-left: 180px;
+    font-size: 80px;
     color: $black;
+    letter-spacing: 10px;
   }
-  .col_1 {
-    display: grid;
-    height: 75%;
-    align-items: center;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 5px;
+  .green {
+    height: 15vh;
+    background: #6dc3a6;
+    margin-top: -40px;
+    overflow: hidden;
     position: relative;
-    .back_img {
-      position: absolute;
-      top: 0;
-      opacity: 0;
-      cursor: pointer;
+    bottom: 0;
+    .heading {
+      position: relative;
+      top: -57px;
+      color: #fff;
     }
-    .pdt {
-      height: 80%;
+  }
+  .green_2 {
+    height: 15vh;
+    background: #6dc3a6;
+    .content_wrapper {
       display: flex;
-      .main_wrapper {
-        height: 100%;
-        width: 100%;
-        border-radius: 5px;
-        box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.75);
+      justify-content: space-around;
+      .content {
+        height: 40vh;
+        width: 20vw;
+        background: #fff;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
         overflow: hidden;
-        opacity: 0;
-        cursor: pointer;
-        .main {
-          height: 100%;
-          width: 100%;
-          background-size: cover;
-          transition: all 0.5s ease-out;
-          &:hover {
-            transform: scale(1.03);
-          }
-        }
-      }
-      .side_wrapper {
-        position: absolute;
-        height: 100%;
-        width: 75%;
-        right: 0;
-        z-index: -2;
-        .img_wrapper {
-          height: 60%;
-          display: grid;
-          grid-gap: 5px;
-          grid-template-columns: repeat(3, 1fr);
-          .side {
-            background-size: cover;
-            height: 100%;
-            border-radius: 5px;
-            opacity: 0;
-          }
-        }
-        .title {
-          height: 40%;
-          width: 80%;
-          margin: 30px 20px;
-          opacity: 0;
-        }
       }
     }
   }
 }
 
-@import "productIimg";
+@import 'productIimg';
 
 #footer {
   height: 50vh;
   display: grid;
   grid-template-areas:
-    "top top"
-    "left right";
+    'top top'
+    'left right';
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
   .fEle {
@@ -852,11 +847,19 @@ body {
     justify-content: center;
     border-left: 1px solid #eee;
     div {
-      width: 40%;
       color: lighten($color: $black, $amount: 10%);
       letter-spacing: 3px;
+      padding: 20px 20px;
+      border: 2px solid lighten($color: $black, $amount: 10%);
+      border-radius: 100px;
+      text-align: center;
+      transition: all 500ms;
+      &:hover {
+        background: lighten($color: $black, $amount: 10%);
+        color: #fff;
+      }
     }
   }
 }
 
-@import "media_query";
+@import 'media_query';

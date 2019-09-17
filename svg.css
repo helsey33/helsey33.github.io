@@ -1,0 +1,55 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #7e82ab;
+}
+
+.container svg {
+  height: 100%;
+}
+
+.container svg #c_x5F_screen {
+  -webkit-transform-origin: 50% 45%;
+          transform-origin: 50% 45%;
+}
+
+.container svg #c_x5F_screen path {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.container svg #c_x5F_screen #c_x5F_border,
+.container svg #c_x5F_screen #c_x5F_bg {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.container svg #c_x5F_power {
+  -webkit-transform-origin: 50% 65%;
+          transform-origin: 50% 65%;
+}
+
+.container svg #c_x5F_stand_x5F_g {
+  -webkit-transform-origin: 50% 70%;
+          transform-origin: 50% 70%;
+}
+
+.container svg #c_x5F_bez_x5F_g {
+  -webkit-transform-origin: 50% 60%;
+          transform-origin: 50% 60%;
+}
+/*# sourceMappingURL=svg.css.map */

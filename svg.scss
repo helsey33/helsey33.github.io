@@ -1,0 +1,34 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7e82ab;
+  svg {
+    height: 100%;
+    #c_x5F_screen {
+      transform-origin: 50% 45%;
+      path {
+        transform-origin: center center;
+      }
+      #c_x5F_border,
+      #c_x5F_bg {
+        transform-origin: center center;
+      }
+    }
+    #c_x5F_power {
+      transform-origin: 50% 65%;
+    }
+    #c_x5F_stand_x5F_g {
+      transform-origin: 50% 70%;
+    }
+    #c_x5F_bez_x5F_g {
+      transform-origin: 50% 60%;
+    }
+  }
+}

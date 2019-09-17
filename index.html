@@ -9,28 +9,6 @@
     <meta name="author" content="Codrops" />
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script>
-        document.documentElement.className = "js";
-        var supportsCssVars = function() {
-          var e,
-            t = document.createElement("style");
-          return (
-            (t.innerHTML = "root: { --tmp-var: bold; }"),
-            document.head.appendChild(t),
-            (e = !!(
-              window.CSS &&
-              window.CSS.supports &&
-              window.CSS.supports("font-weight", "var(--tmp-var)")
-            )),
-            t.parentNode.removeChild(t),
-            e
-          );
-        };
-        supportsCssVars() ||
-          alert(
-            "Please view this demo in a modern browser that supports CSS Variables."
-          );
-      </script>
 </head>
 
 <body class="loading">
@@ -50,7 +28,6 @@
                    <a href="#services"><li>Services</li></a>
                    <a href="#product"><li>Product</li></a>
                    <a href="#portfolio"><li>Portfolio</li></a>
-                   <a href="videos.html"><li>Videos</li></a>
                </ul>
            </div>
        </div>
@@ -561,211 +538,7 @@
         </div>
         
     </section>
-    <section id="portfolio">
-        <svg class="hidden">
-			<symbol id="icon-arrow" viewBox="0 0 24 24">
-				<title>arrow</title>
-				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
-			</symbol>
-			<symbol id="icon-drop" viewBox="0 0 24 24">
-				<title>drop</title>
-				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
-			</symbol>
-			<svg id="icon-nav" viewBox="0 0 152 63">
-				<title>navarrow</title>
-				<path d="M115.737 29L92.77 6.283c-.932-.92-1.21-2.84-.617-4.281.594-1.443 1.837-1.862 2.765-.953l28.429 28.116c.574.57.925 1.557.925 2.619 0 1.06-.351 2.046-.925 2.616l-28.43 28.114c-.336.327-.707.486-1.074.486-.659 0-1.307-.509-1.69-1.437-.593-1.442-.315-3.362.617-4.284L115.299 35H3.442C2.032 35 .89 33.656.89 32c0-1.658 1.143-3 2.552-3H115.737z"/>
-			</svg>
-		</svg>
-		<main>
-			<p class="message">Please view on desktop to see the full layout</p>
-			<div class="slideshow">
-				<header class="codrops-header">
-					<h1 class="codrops-header__title">Skills</h1>
-					
-				</header>
-				<div class="slide slide--layout-1 slide--current">
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/1.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">Javascript</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/2.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">C/C++</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/3.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">Python</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/4.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">HTML/CSS</h3>
-							<p class="slide__figure-description">jQuery,Bootstrap and other frameworks</p>
-						</figcaption>
-					</figure>
-					<span class="slide__number slide__number--left">1</span>
-					<span class="slide__number slide__number--right">2</span>
-				</div>
-				<div class="slide slide--layout-2">
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/5.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">React</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/6.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">VUE</h3>
-							<p class="slide__figure-description">Beginner</p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/7.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">React Native</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<span class="slide__number slide__number--left">3</span>
-					<span class="slide__number slide__number--right">4</span>
-				</div>
-				<div class="slide slide--layout-3">
-					
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/9.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-                                <h3 class="slide__figure-title">Google Cloud</h3>
-                                <p class="slide__figure-description">basics</p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/10.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">NodeJS</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/11.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-                                <h3 class="slide__figure-title">Firebase</h3>
-                                <p class="slide__figure-description"></p>
-							
-						</figcaption>
-					</figure>
-					<span class="slide__number slide__number--left">5</span>
-					<span class="slide__number slide__number--right">6</span>
-				</div>
-				<div class="slide slide--layout-5">
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/16.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">MongoDB</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<figure class="slide__figure">
-						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/portfolio/17.png)"></div>
-							<div class="slide__figure-reveal"></div>
-						</div>
-						<figcaption>
-							<h3 class="slide__figure-title">MySQL</h3>
-							<p class="slide__figure-description"></p>
-						</figcaption>
-					</figure>
-					<span class="slide__number slide__number--left">7</span>
-					<span class="slide__number slide__number--right">8</span>
-                </div>
-                
-				<!-- revealer -->
-				<div class="revealer">
-					<div class="revealer__item revealer__item--left"></div>
-					<div class="revealer__item revealer__item--right"></div>
-				</div>
-				<nav class="arrow-nav">
-					<button class="arrow-nav__item arrow-nav__item--prev">
-						<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
-					</button>
-					<button class="arrow-nav__item arrow-nav__item--next">
-						<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
-					</button>
-				</nav>
-				<!-- navigation -->
-				<nav class="nav">
-					<button class="nav__button">
-						<span class="nav__button-text">index</span>
-					</button>
-					<h2 class="nav__chapter">Languages</h2>
-					<div class="toc">
-						<a class="toc__item" href="#entry-1">
-							<span class="toc__item-page">01.</span>
-							<span class="toc__item-title">Languages</span>
-						</a>
-						<a class="toc__item" href="#entry-2">
-							<span class="toc__item-page">02.</span>
-							<span class="toc__item-title">Frameworks</span>
-						</a>
-						<a class="toc__item" href="#entry-3">
-							<span class="toc__item-page">03.</span>
-							<span class="toc__item-title">Server & Serverless</span>
-						</a>
-						<a class="toc__item" href="#entry-4">
-							<span class="toc__item-page">04.</span>
-							<span class="toc__item-title">Database</span>
-						</a>
-					</div>
-				</nav>
-				<!-- little sides -->
-				<div class="slideshow__indicator"></div>
-				<div class="slideshow__indicator"></div>
-			</div>
-		</main>
-    </section>
+    <section id="portfolio"></section>
     <section id="footer">
         <div class="top fEle">
             <div class="heading">Let's Connect</div>
@@ -791,8 +564,6 @@
     <script src="js/animation_services.js"></script>
     <script src="js/animation_project.js"></script>
     <script src="js/animation.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/demo.js"></script>
     <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
 </body>
 

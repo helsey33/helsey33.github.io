@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:300,400,500');
-@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Leckerli+One");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap");
 
 $black: #2b2b2b;
 $gunMetal: #22333b;
@@ -20,26 +20,22 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50px;
 }
 
-@import 'base';
-.slide--layout-1 .slide__figure {
-  opacity: 0;
-}
-
-html{
-  font-size:62.5%;
+html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
-}
-
-*{
-  transform: rotate(0.01);
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
 }
 
 .loading {
@@ -62,7 +58,7 @@ body {
     animation: loading 2s ease-out infinite;
     transition: all 1s;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 100%;
@@ -142,7 +138,7 @@ body {
       li {
         list-style: none;
         text-transform: uppercase;
-        font-family: 'Montserrat', serif;
+        font-family: "Montserrat", serif;
         margin: 5rem 0;
         letter-spacing: 3px;
         font-size: 2rem;
@@ -170,7 +166,7 @@ body {
     .right {
       overflow: hidden;
       .img-wrapper {
-        background: url('../img/3.png') center center;
+        background: url("../img/3.png") center center;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -180,11 +176,8 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      div{
-        will-change: opacity,transform;
-      }
       h2 {
-        font-family: 'Cinzel';
+        font-family: "Cinzel";
         font-size: 5rem;
         width: 35rem;
         color: $black;
@@ -193,7 +186,7 @@ body {
         width: 35rem;
         line-height: 3rem;
         letter-spacing: 3px;
-        font-size:2rem;
+        font-size: 2rem;
       }
       .knowMore {
         text-align: right;
@@ -233,7 +226,7 @@ body {
           height: 2px;
           width: 6rem;
           background: $black;
-          margin: .5rem;
+          margin: 0.5rem;
         }
         .content-side {
           color: $black;
@@ -302,7 +295,7 @@ body {
   .home1 {
     height: 100%;
     width: 100%;
-    background: url('../img/1.png') center center;
+    background: url("../img/1.png") center center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -346,7 +339,6 @@ body {
     position: absolute;
     top: -100%;
     overflow: hidden;
-    will-change: top;
   }
   .four {
     height: 100%;
@@ -354,17 +346,15 @@ body {
     position: absolute;
     right: -100%;
     overflow: hidden;
-    will-change: right;
     .home4 {
       height: 100%;
       width: 100%;
-      background: url('../img/pawan-bg.png') center center;
+      background: url("../img/pawan-bg.png") center center;
       background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       perspective: 1000px;
-      will-change: transform;
       svg {
         position: absolute;
       }
@@ -373,10 +363,10 @@ body {
       position: absolute;
       top: 0;
       display: flex;
-      font-family: 'Cinzel';
+      font-family: "Cinzel";
       letter-spacing: 5px;
       margin-top: 3rem;
-      font-size:1.6rem;
+      font-size: 1.6rem;
     }
   }
 }
@@ -460,7 +450,7 @@ body {
       color: #d5803f;
       position: relative;
       span {
-        content: '';
+        content: "";
         width: 100%;
         height: 100%;
         position: absolute;
@@ -523,7 +513,7 @@ body {
       .img1 {
         width: 100%;
         height: 100%;
-        background: url('../img/abstract-art-background-1037999.png') center
+        background: url("../img/abstract-art-background-1037999.png") center
           center;
         background-size: cover;
         transform-origin: center center;
@@ -531,7 +521,7 @@ body {
       .img2 {
         width: 100%;
         height: 100%;
-        background: url('../img/camera-cute-fashion-881633.png') center center;
+        background: url("../img/camera-cute-fashion-881633.png") center center;
         background-size: cover;
       }
       span {
@@ -571,12 +561,12 @@ body {
 #services {
   .web_design {
     height: 100vh;
-    background: url('../img/services1.png') center center no-repeat;
+    background: url("../img/services1.png") center center no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: 50% 50%;
     .left {
-      font-family: 'Leckerli One', cursive;
+      font-family: "Leckerli One", cursive;
       font-size: 6rem;
       color: #28282b;
       display: flex;
@@ -599,7 +589,7 @@ body {
           background: #fde038;
         }
         .new_think {
-          font-family: 'Montserrat';
+          font-family: "Montserrat";
           font-size: 2rem;
           font-weight: 300;
           color: $black;
@@ -624,7 +614,7 @@ body {
           position: absolute;
           bottom: -100%;
           width: 100%;
-          background: url('../img/800_pegeo.png') center center no-repeat;
+          background: url("../img/800_pegeo.png") center center no-repeat;
           background-size: cover;
         }
       }
@@ -642,7 +632,7 @@ body {
   }
   .dNd {
     height: 100vh;
-    background: url('../img/services2.png') center center no-repeat;
+    background: url("../img/services2.png") center center no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -650,7 +640,7 @@ body {
     .left {
       position: relative;
       .text {
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-size: 3rem;
         font-weight: 200;
         letter-spacing: 5px;
@@ -687,7 +677,7 @@ body {
   }
   .media {
     height: 100vh;
-    background: url('../img/services3.png') center center no-repeat;
+    background: url("../img/services3.png") center center no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -707,7 +697,7 @@ body {
           width: 100%;
           position: absolute;
           bottom: -100%;
-          background: url('../img/media.png') center center no-repeat;
+          background: url("../img/media.png") center center no-repeat;
           background-size: cover;
         }
       }
@@ -730,7 +720,7 @@ body {
         position: relative;
       }
       .heading {
-        font-family: 'Leckerli One', cursive;
+        font-family: "Leckerli One", cursive;
         margin: 10px 0;
         font-size: 4rem;
         opacity: 0;
@@ -740,7 +730,7 @@ body {
         letter-spacing: 3px;
         line-height: 25px;
         opacity: 0;
-        font-size:1.8rem;
+        font-size: 1.8rem;
       }
       .line {
         height: 5px;
@@ -796,14 +786,14 @@ body {
   }
 }
 
-@import 'productIimg';
+@import "productIimg";
 
 #footer {
   height: 50vh;
   display: grid;
   grid-template-areas:
-    'top top'
-    'left right';
+    "top top"
+    "left right";
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
   font-size: 1.6rem;
@@ -820,13 +810,13 @@ body {
     .heading {
       font-size: 4rem;
       text-transform: uppercase;
-      letter-spacing: .5rem;
+      letter-spacing: 0.5rem;
       margin: 10px 0;
     }
     .para {
       font-size: 20px;
       text-transform: uppercase;
-      letter-spacing: .5rem;
+      letter-spacing: 0.5rem;
       color: lighten($color: $black, $amount: 10%);
     }
   }
@@ -863,4 +853,4 @@ body {
   }
 }
 
-@import 'media_query';
+@import "media_query";

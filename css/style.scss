@@ -27,6 +27,7 @@ body::-webkit-scrollbar-thumb {
 
 html{
   font-size:62.5%;
+  scroll-behavior: smooth;
 }
 
 *{
@@ -39,9 +40,6 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat';
   overflow-x: hidden;
-  scroll-behavior: smooth;
-  // background: $black;
-  // overflow: hidden;
 }
 
 .loading {
@@ -579,7 +577,7 @@ body {
     grid-template-columns: 50% 50%;
     .left {
       font-family: 'Leckerli One', cursive;
-      font-size: 60px;
+      font-size: 6rem;
       color: #28282b;
       display: flex;
       justify-content: center;
@@ -602,7 +600,7 @@ body {
         }
         .new_think {
           font-family: 'Montserrat';
-          font-size: 15px;
+          font-size: 2rem;
           font-weight: 300;
           color: $black;
           text-transform: uppercase;
@@ -653,7 +651,7 @@ body {
       position: relative;
       .text {
         font-family: 'Montserrat';
-        font-size: 25px;
+        font-size: 3rem;
         font-weight: 200;
         letter-spacing: 5px;
         color: $black;
@@ -672,7 +670,7 @@ body {
         opacity: 0;
         .heading {
           margin: 10px 0;
-          font-size: 40px;
+          font-size: 4rem;
           text-transform: uppercase;
           font-weight: 300;
           letter-spacing: 5px;
@@ -682,6 +680,7 @@ body {
           width: 30%;
           letter-spacing: 3px;
           line-height: 25px;
+          font-size: 1.8rem;
         }
       }
     }
@@ -716,8 +715,8 @@ body {
         position: absolute;
         color: #fff;
         font-weight: 700;
-        font-size: 200px;
-        bottom: -20px;
+        font-size: 20rem;
+        bottom: -2rem;
         margin: 0;
         text-shadow: 0px 0px 10px #000;
         opacity: 0;
@@ -733,7 +732,7 @@ body {
       .heading {
         font-family: 'Leckerli One', cursive;
         margin: 10px 0;
-        font-size: 40px;
+        font-size: 4rem;
         opacity: 0;
       }
       .content {
@@ -741,6 +740,7 @@ body {
         letter-spacing: 3px;
         line-height: 25px;
         opacity: 0;
+        font-size:1.8rem;
       }
       .line {
         height: 5px;
@@ -786,7 +786,7 @@ body {
       display: flex;
       justify-content: space-around;
       .content {
-        height: 40vh;
+        height: 30vh;
         width: 20vw;
         background: #fff;
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -806,6 +806,7 @@ body {
     'left right';
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
+  font-size: 1.6rem;
   .fEle {
     opacity: 0;
   }
@@ -817,15 +818,15 @@ body {
     flex-direction: column;
     overflow: hidden;
     .heading {
-      font-size: 40px;
+      font-size: 4rem;
       text-transform: uppercase;
-      letter-spacing: 5px;
+      letter-spacing: .5rem;
       margin: 10px 0;
     }
     .para {
       font-size: 20px;
       text-transform: uppercase;
-      letter-spacing: 5px;
+      letter-spacing: .5rem;
       color: lighten($color: $black, $amount: 10%);
     }
   }
@@ -849,7 +850,7 @@ body {
     div {
       color: lighten($color: $black, $amount: 10%);
       letter-spacing: 3px;
-      padding: 20px 20px;
+      padding: 2rem;
       border: 2px solid lighten($color: $black, $amount: 10%);
       border-radius: 100px;
       text-align: center;

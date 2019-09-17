@@ -95,6 +95,7 @@ a:focus {
   text-transform: lowercase;
   display: inline-block;
   margin: 0 0.75rem 0 0;
+  font-size: 1.6rem;
 }
 
 .arrow-nav,
@@ -105,7 +106,7 @@ a:focus {
 .slide__figure-title {
   font-weight: normal;
   margin: 0.5rem 0 0 0;
-  font-size: inherit;
+  font-size: 1.5rem;
 }
 
 .slide__figure-title::before {
@@ -118,6 +119,7 @@ a:focus {
   margin: 0;
   font-style: italic;
   color: var(--color-text-alt);
+  font-size:1.4rem;
 }
 
 .slide__figure {
@@ -434,6 +436,7 @@ a:focus {
     display: block;
     margin: 0.35rem 0;
     opacity: 0;
+    font-size: 1.5rem;
   }
   .nav--open .toc__item {
     pointer-events: auto;
@@ -500,5 +503,6 @@ a:focus {
     margin: 0;
     display: inline-block;
     line-height: 1;
+    font-size: 1.6rem;
   }
 }

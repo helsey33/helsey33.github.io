@@ -13,7 +13,6 @@
     opacity: 0;
   }
   .details {
-    width: 100%;
     height: 50%;
     padding: 2rem;
     .title {
@@ -28,23 +27,23 @@
 }
 
 .project1 .img_wrapper {
-  background: url('../img/product/pj1.png') no-repeat center center;
+  background: url("../img/product/pj1.png") no-repeat center center;
   background-size: cover;
 }
 
 .project2 .img_wrapper {
-  background: url('../img/product/pj2.png') no-repeat center center;
+  background: url("../img/product/pj2.png") no-repeat center center;
   background-size: cover;
 }
 
 .project3 {
   .img_wrapper {
-    background: url('../img/product/pj3.png') no-repeat center center;
+    background: url("../img/product/pj3.png") no-repeat center center;
     background-size: cover;
   }
 }
 
 .project4 .img_wrapper {
-  background: url('../img/product/pj4.png') no-repeat center center;
+  background: url("../img/product/pj4.png") no-repeat center center;
   background-size: cover;
 }

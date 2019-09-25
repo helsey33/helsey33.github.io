@@ -31,6 +31,7 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat";
   overflow-x: hidden;
+  // overflow-y: hidden;
 }
 
 a {
@@ -157,141 +158,6 @@ a {
   position: relative;
   overflow: hidden;
   transition: opacity 0.5s;
-  .home3 {
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    .right {
-      overflow: hidden;
-      .img-wrapper {
-        background: url("../img/3.png") center center;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-      }
-    }
-    .left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h2 {
-        font-family: "Cinzel";
-        font-size: 5rem;
-        width: 35rem;
-        color: $black;
-      }
-      p {
-        width: 35rem;
-        line-height: 3rem;
-        letter-spacing: 3px;
-        font-size: 2rem;
-      }
-      .knowMore {
-        text-align: right;
-        font-size: 1.5rem;
-        cursor: pointer;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        &:hover .plus {
-          transform-origin: center center;
-          transition: all 0.5s;
-          transform: rotate(720deg);
-        }
-      }
-    }
-  }
-  .home2 {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    background: #6dc3a6;
-    .content-wrapper {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      padding: 4rem;
-      text-transform: uppercase;
-      .content-up {
-        display: flex;
-        align-items: center;
-        .line {
-          height: 2px;
-          width: 6rem;
-          background: $black;
-          margin: 0.5rem;
-        }
-        .content-side {
-          color: $black;
-          font-size: 4.5rem;
-        }
-      }
-      .content-down {
-        font-size: 10rem;
-        display: flex;
-        align-items: center;
-        transition: opacity 0.5s;
-        span {
-          color: $black;
-          &:nth-child(1) {
-            color: #fff;
-            position: absolute;
-            clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
-            animation: clip 1s forwards;
-            z-index: 2;
-            text-shadow: 0px 0px 2px #d9d9d9;
-            animation-delay: 1s;
-            animation-play-state: paused;
-          }
-        }
-
-        .line {
-          height: 2px;
-          width: 30vw;
-          background: #fff;
-          margin-left: 10px;
-        }
-      }
-    }
-    .content-right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .devices {
-        svg {
-          opacity: 0;
-          transition: opacity 0.5s;
-          width: 1000px;
-          #c_x5F_screen {
-            transform-origin: 50% 45%;
-            path {
-              transform-origin: center center;
-            }
-            #c_x5F_border,
-            #c_x5F_bg {
-              transform-origin: center center;
-            }
-          }
-          #c_x5F_power {
-            transform-origin: 50% 65%;
-          }
-          #c_x5F_stand_x5F_g {
-            transform-origin: 50% 70%;
-          }
-          #c_x5F_bez_x5F_g {
-            transform-origin: 50% 60%;
-          }
-        }
-      }
-    }
-  }
   .home1 {
     height: 100%;
     width: 100%;
@@ -439,7 +305,7 @@ a {
       }
     }
     .inner {
-      margin-left: 5rem;
+      margin-left: 10rem;
     }
     .heading {
       font-size: 3rem;

@@ -1,3 +1,5 @@
+let media1200 = window.matchMedia("(max-width:1200px)");
+
 function animateDevices() {
   anime
     .timeline({

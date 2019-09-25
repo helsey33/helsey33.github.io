@@ -11,7 +11,7 @@ const animateWeb = () => {
     })
     .add({
       targets: ".web_design .line_wrapper",
-      width: [0, "40%"],
+      width: media1200.matches ? [0, "80%"] : [0, "40%"],
       offset: "-=1000",
       complete: () => {
         anime({
@@ -92,7 +92,7 @@ const animateMedia = () => {
     })
     .add({
       targets: ".media .line",
-      width: [0, "50%"],
+      width: media1200.matches ? [0, "80%"] : [0, "50%"],
       offset: "-=1500"
     })
     .add({
@@ -151,5 +151,5 @@ const animateFooter = () => {
 var waypoint7 = new Waypoint({
   element: document.querySelector("#footer"),
   handler: animateFooter,
-  offset: "70%"
+  offset: "60%"
 });

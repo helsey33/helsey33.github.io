@@ -35,44 +35,10 @@ window.addEventListener("load", () => {
 
   document.querySelector(".home4").onmousemove = e => {
     let xPos = e.clientX / window.innerWidth - 0.5;
-    let yPos = e.clientY / window.innerHeight - 0.5;
     anime({
       targets: ".home4 svg",
-      rotateX: [10 * yPos],
       rotateY: [10 * xPos],
       duration: 50
     });
   };
 });
-
-let active = false;
-document.getElementById("hamburger").onclick = () => {
-  document.getElementById("hamburger").classList.toggle("active");
-  if (!active) {
-    anime
-      .timeline({
-        easing: "easeOutExpo"
-      })
-      .add({
-        targets: "#menu",
-        right: ["-21%", 0],
-        duration: 1000
-      })
-      .add({
-        targets: "#menu li",
-        translateX: [20, 0],
-        opacity: [0, 1],
-        delay: (el, i) => i * 100,
-        offset: "-=800"
-      });
-  } else {
-    anime({
-      targets: "#menu",
-      easing: "easeOutExpo",
-      right: [0, "-21%"],
-      duration: 1000
-    });
-  }
-
-  active = !active;
-};

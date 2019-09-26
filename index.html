@@ -14,25 +14,28 @@
 <body class="loading">
     <div class="spinner"></div>
     <input type="checkbox" id="menu_check">
-    <label for="menu_check" id="hamburger">
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-    </label>
-    <section id="menu">
-       <div class="head"></div>
-       <div class="body">
-           <div class="menu">
-               <ul>
-                   <a href="#home"><li>Home</li></a>
-                   <a href="#about"><li>About</li></a>
-                   <a href="#services"><li>Services</li></a>
-                   <a href="#projects"><li>Projects</li></a>
-                   <a href="#footer"><li>Contact</li></a>
-               </ul>
-           </div>
-       </div>
-    </section>
+    
+    <div  id="hamburger">
+            <div class="menu_left">
+                    <ul>
+                        <a href="#home"><li>Home</li></a>
+                        <a href="#about"><li>About</li></a>
+                        <a href="#skills"><li>Skills</li></a>
+                    </ul>
+                </div>
+        <label for="menu_check" class="nav_wrapper">
+            <div class="nav"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+        </label>
+        <div class="menu_right">
+                <ul>
+                    <a href="#projects"><li>Projects</li></a>
+                    <a href="#footer"><li>Contact</li></a>
+                </ul>
+            </div>
+    </div>
+    
     <section id="home">
         <div class="home-container">
             <div class="homeWrapper one">
@@ -276,7 +279,7 @@
             </div>
         </div>
     </section>
-    <section id="services">
+    <section id="skills">
         <div class="upper">
             <div class="web_design">
                 <div class="left">

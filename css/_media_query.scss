@@ -2,6 +2,14 @@
   html {
     font-size: 50%;
   }
+  #menu_check:checked ~ #hamburger {
+    .nav:nth-child(1) {
+      transform: rotate(45deg) translate(7px, 6px);
+    }
+    .nav:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -9,8 +17,10 @@
     font-size: 40%;
   }
 
-  #menu {
-    width: 20%;
+  #menu_check:checked ~ #hamburger {
+    .nav:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
   }
 
   .home-container {
@@ -44,7 +54,7 @@
     }
   }
 
-  #services {
+  #skills {
     .web_design {
       background-size: contain;
       grid-template-columns: 30% 70%;
@@ -76,6 +86,38 @@
 }
 
 @media only screen and (max-width: 900px) {
+  html {
+    font-size: 30%;
+  }
+
+  #hamburger {
+    .nav_wrapper {
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+      .nav {
+        height: 2px;
+        margin: 2px 0;
+        width: 20px;
+        &:nth-child(2) {
+          width: 15px;
+        }
+      }
+    }
+  }
+
+  .home-container {
+    .home1 {
+      .emo h1 {
+        width: 50%;
+      }
+    }
+    .four .home4 {
+      .content {
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {

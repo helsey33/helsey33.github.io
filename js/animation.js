@@ -1,6 +1,5 @@
 window.addEventListener("load", () => {
   document.querySelector("body").classList.remove("loading");
-
   anime
     .timeline({
       easing: "easeOutExpo"
@@ -32,13 +31,4 @@ window.addEventListener("load", () => {
         bringInFour();
       }
     });
-
-  // document.querySelector(".home4").onmousemove = e => {
-  //   let xPos = e.clientX / window.innerWidth - 0.5;
-  //   anime({
-  //     targets: ".home4 svg",
-  //     rotateY: [10 * xPos],
-  //     duration: 50
-  //   });
-  // };
 });

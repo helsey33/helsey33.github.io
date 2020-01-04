@@ -68,8 +68,8 @@ a {
   border-top: 0.2px solid #2b2b2b;
   border-bottom: 0.2px solid #2b2b2b;
   border-radius: 50%;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 @-webkit-keyframes loading {
@@ -817,6 +817,7 @@ a {
   font-weight: lighter;
   font-size: 1.8rem;
   cursor: default;
+  color: #5e5e5e;
 }
 
 .project1 .img_wrapper {

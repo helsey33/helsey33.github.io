@@ -24,6 +24,7 @@
       font-weight: lighter;
       font-size: 1.8rem;
       cursor: default;
+      color: lighten($color: $black, $amount: 20%);
     }
   }
 }
